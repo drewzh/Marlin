@@ -485,6 +485,11 @@
   #define DEFAULT_Ki 1.13
   #define DEFAULT_Kd 58.04
 
+  // E3D V6 hotend with stock v6 fan, tuned to 240c
+  #define DEFAULT_Kp 21.42
+  #define DEFAULT_Ki 1.63
+  #define DEFAULT_Kd 70.47
+
 #endif // PIDTEMP
 
 //===========================================================================
@@ -521,9 +526,14 @@
   //#define PID_BED_DEBUG // Sends debug data to the serial port.
 
   // Ender 3 stock heatbed with cork insulated borosilicate glass with PEI top layer, tuned to 70c
-  #define DEFAULT_bedKp 259.28
-  #define DEFAULT_bedKi 47.61
-  #define DEFAULT_bedKd 352.98
+  // #define DEFAULT_bedKp 259.28
+  // #define DEFAULT_bedKi 47.61
+  // #define DEFAULT_bedKd 352.98
+
+  // Ender 3 stock heatbed with cork insulated borosilicate glass with PEI top layer, tuned to 60c
+  #define DEFAULT_bedKp 94.78
+  #define DEFAULT_bedKi 18.21
+  #define DEFAULT_bedKd 328.91
 
   // FIND YOUR OWN: "M303 E-1 C8 S90" to run autotune on the bed at 90 degreesC for 8 cycles.
 #endif // PIDTEMPBED
@@ -909,7 +919,7 @@
  *
  * Specify a Probe position as { X, Y, Z }
  */
-#define NOZZLE_TO_PROBE_OFFSET { -35, -25, -3.425 }
+#define NOZZLE_TO_PROBE_OFFSET { -35, -25, -2.60 }
 
 // Certain types of probes need to stay away from edges
 #define MIN_PROBE_EDGE 10
