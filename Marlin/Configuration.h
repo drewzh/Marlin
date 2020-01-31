@@ -486,8 +486,8 @@
 
   // Tuned to 230c
   #define DEFAULT_Kp 25.09
-  #define DEFAULT_Ki 2.22
-  #define DEFAULT_Kd 70.89
+  #define DEFAULT_Ki 2.29
+  #define DEFAULT_Kd 68.77
 
 #endif // PIDTEMP
 
@@ -530,9 +530,9 @@
   // #define DEFAULT_bedKd 352.98
 
   // Ender 3 stock heatbed with cork insulated borosilicate glass with PEI top layer, tuned to 60c
-  #define DEFAULT_bedKp 94.78
-  #define DEFAULT_bedKi 18.21
-  #define DEFAULT_bedKd 328.91
+  #define DEFAULT_bedKp 93.41
+  #define DEFAULT_bedKi 18.66
+  #define DEFAULT_bedKd 311.67
 
   // FIND YOUR OWN: "M303 E-1 C8 S90" to run autotune on the bed at 90 degreesC for 8 cycles.
 #endif // PIDTEMPBED
@@ -719,7 +719,7 @@
  * Override with M92
  *                                      X, Y, Z, E0 [, E1[, E2...]]
  */
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 415  }
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 79.20, 79.20, 396.82, 415 }
 
 /**
  * Default Max Feed Rate (mm/s)
@@ -766,7 +766,7 @@
  * When changing speed and direction, if the difference is less than the
  * value set here, it may happen instantaneously.
  */
-#define CLASSIC_JERK
+// #define CLASSIC_JERK
 #if ENABLED(CLASSIC_JERK)
   #define DEFAULT_XJERK 10.0
   #define DEFAULT_YJERK 10.0
