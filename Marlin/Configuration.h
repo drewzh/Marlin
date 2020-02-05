@@ -719,7 +719,7 @@
  * Override with M92
  *                                      X, Y, Z, E0 [, E1[, E2...]]
  */
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 79.20, 79.20, 396.82, 415 }
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 79.73, 79.73, 396.82, 415 }
 
 /**
  * Default Max Feed Rate (mm/s)
@@ -1883,6 +1883,10 @@
 // http://reprap.org/wiki/RepRapDiscount_Full_Graphic_Smart_Controller
 //
 #define REPRAP_DISCOUNT_FULL_GRAPHIC_SMART_CONTROLLER
+
+#define ST7920 DELAY_1 DELAY_NS(0)
+#define ST7920_DELAY_2 DELAY_NS(250)
+#define ST7920_DELAY_3 DELAY_NS(250)
 
 //
 // ReprapWorld Graphical LCD
